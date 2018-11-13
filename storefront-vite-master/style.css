@@ -1,0 +1,322 @@
+/*
+Theme Name:   	Storefront Vite
+Theme URI:    	https://github.com/amamel/storefront-vite
+Author:       	Alex Mamel
+Author URI:     https://alexmamel.com
+Template:     	storefront
+Description:  	This is a blank child theme for WooThemes StoreFront theme
+Version:      	1.0.0
+License:      	GNU General Public License v2 or later
+License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  	storefront
+Tags:         	black, white, light, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+Storefront is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
+Images License: GNU General Public License v2 or later
+*/
+/*
+ * Add your own custom css below this text.
+ */
+
+@supports (display: grid) {
+    .site {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template: auto 1fr auto;
+        min-height: 100vh;
+    }
+}
+
+.site-header {
+    background-color: #f0f9fb;
+}
+
+.site-footer {
+    font-size: 13px;
+    padding: 20px 0;
+    background: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+}
+
+
+.featured-img-collection {
+    max-width: 220px;
+    height: auto;
+    display: inline-block;
+}
+
+.collection-caption {
+    display: none;
+}
+
+
+.eqWrap {
+	display: flex;
+}
+
+.eq {
+    padding: 10px;   
+}
+
+.featured-half {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.equalHWrap {
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+#menu-follow-us {
+     margin-top: 10px;
+}
+
+#menu-follow-us li {
+     vertical-align: top;
+     display: inline;
+}
+
+ .social-icon {
+     color: #fff;
+}
+
+ .social-icons a {
+     color: #fff;
+     text-decoration: none;
+}
+
+
+
+ .svg-facebook:before {
+    display: block;
+    content: ' ';
+    background-image: url('/wp-content/uploads/2018/11/facebook.svg');
+    background-size: 28px 28px;
+    height: 28px;
+    width: 28px;
+ }
+
+ .svg-facebook {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+ .svg-facebook:hover {
+
+}
+
+
+
+.svg-twitter:before {
+    display: block;
+    content: ' ';
+    background-image: url('/wp-content/uploads/2018/11/twitter.svg');
+    background-size: 28px 28px;
+    height: 28px;
+    width: 28px;
+ }
+
+ .svg-twitter {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+ .svg-twitter:hover {
+
+}
+
+.svg-instagram:before {
+    display: block;
+    content: ' ';
+    background-image: url('/wp-content/uploads/2018/11/instagram.svg');
+    background-size: 28px 28px;
+    height: 28px;
+    width: 28px;
+}
+
+ .svg-instagram {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+ .svg-instagram:hover {
+
+}
+
+
+
+
+.svg-pinterest:before {
+    display: block;
+    content: ' ';
+    background-image: url('/wp-content/uploads/2018/11/pinterest.svg');
+    background-size: 28px 28px;
+    height: 28px;
+    width: 28px;
+}
+
+.svg-pinterest {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+.svg-pinterest:hover {
+
+}
+
+.svg-youtube:before {
+    display: block;
+    content: ' ';
+    background-image: url('/wp-content/uploads/2018/11/youtube.svg');
+    background-size: 28px 28px;
+    height: 28px;
+    width: 28px;
+}
+
+.svg-youtube {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+.svg-youtube:hover {
+
+}
+
+
+/* Theme Overrides */
+.widget_nav_menu ul li::before {
+  content: ' ';
+}
+
+.widget-title {
+    color: #4c4c4b;
+    margin-bottom: 15px;
+    border-bottom: 0px !important;
+}
+
+.footer-widgets {
+    border-bottom: none;
+}
+
+.featured_title {
+    font-size: 28px;
+    color: #2e2a25;
+    font-weight: 700;
+    text-align: center;
+}
+
+.feature_divider {
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+    border: 0;
+    border-color: #aaaaaa;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.featured_text {
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+}
+
+/* CSS Grid */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 40px 100px 100px 200px 40px;
+}
+
+.container-fluid {
+    padding: 32px 30px 0;
+    max-width: 1440px;
+}
+
+.topbar {
+    grid-column: span 12;
+    
+    background: #f7f7f8;
+}
+
+.header {
+    grid-column: span 12;
+}
+
+.nav {
+    grid-column: span 4;
+}
+
+.brand {
+    grid-column: span 4;
+    text-align: center;
+}
+
+.content {
+    grid-column: span 12;
+}
+
+.footer {
+    grid-column: span 6;
+}
+
+.newsletter {
+    grid-column: span 6;
+}
+
+.sitemap {
+    grid-column: span 12;
+    background: #f7f7f8;
+}
+
+/* When the viewport has 480px move menu up a row */
+@media screen and (max-width: 480px) {
+    .header {
+        grid-column: span 6;
+    }
+
+    .menu {
+        grid-row: 1;
+        grid-column: span 6;
+    }
+
+    .content {
+        grid-column: span 12;
+    }
+}
+
